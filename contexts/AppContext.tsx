@@ -1,3 +1,4 @@
+import { createUserWithEmailAndPassword } from 'firebase/auth'
 import * as React from 'react'
 import { useContext, useEffect, useState } from 'react'
 

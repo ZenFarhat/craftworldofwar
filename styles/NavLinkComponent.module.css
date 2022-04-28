@@ -1,0 +1,26 @@
+.navlink__component {
+  background-color: #291404;
+  width: 90%;
+  border: 2px solid #deb810;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  color: #deb810;
+  margin: 6px 0;
+}
+
+.navlink__component > a {
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlink__component:hover {
+  box-shadow: inset 0 0 10px #deb810;
+}
+
+.navlink__img {
+  border-radius: 50%;
+  border: 2px solid #a9630e !important;
+}

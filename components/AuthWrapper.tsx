@@ -8,18 +8,10 @@ interface AuthWrapperProps {
 }
 
 const AuthWrapper = (props: AuthWrapperProps) => {
-  const router = useRouter()
-
   const { auth } = useAppContext()
   const { children } = props
 
-  useEffect(() => {
-    if (!auth) {
-      router.push("/login")
-    }
-  }, [auth])
-
-  return <div>{children}</div>
+  return auth ? <div>{children}</div> : <></>
 }
 
 export default AuthWrapper

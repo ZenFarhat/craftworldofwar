@@ -1,6 +1,7 @@
 import React from 'react'
 
 import layoutStyles from '../styles/Layout.module.css'
+import AuthWrapper from './AuthWrapper'
 import Meta from './Meta'
 import Nav from './Nav'
 
@@ -14,7 +15,9 @@ export const Layout = (props: LayoutProps) => {
   return (
     <div className={layoutStyles.container}>
       <Meta />
-      <Nav />
+      <AuthWrapper>
+        <Nav />
+      </AuthWrapper>
       {children}
     </div>
   )

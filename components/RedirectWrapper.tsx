@@ -16,7 +16,7 @@ const RedirectWrapper = (props: RedirectWrapperProps) => {
   useEffect(() => {
     console.log(router.pathname)
     if (protectedRoutes.includes(router.pathname) && !auth) {
-      router.push("/login")
+      router.push("/")
     } else {
       return
     }

@@ -1,0 +1,19 @@
+.bottom__menu {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 150px;
+  background-color: gray;
+  color: white;
+  padding: 8px 16px;
+}
+
+.bottom__menuicon {
+  border: 1px solid white;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import layoutStyles from '../styles/Layout.module.css'
+import BottomMenu from './BottomMenu'
 import Meta from './Meta'
 import Nav from './Nav'
 
@@ -16,6 +17,7 @@ export const Layout = (props: LayoutProps) => {
       <Meta />
       <Nav />
       {children}
+      <BottomMenu />
     </div>
   )
 }

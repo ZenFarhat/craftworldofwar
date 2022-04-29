@@ -2,7 +2,8 @@ import { useRouter } from 'next/router'
 import * as React from 'react'
 import { useContext, useEffect, useState } from 'react'
 
-import { app, auth } from '../firebase'
+import { addZones, app, auth, getZones } from '../firebase'
+import { DefaultListModel } from '../models/DefaultList.interface'
 
 export interface IAppContext {
   children?: React.ReactNode

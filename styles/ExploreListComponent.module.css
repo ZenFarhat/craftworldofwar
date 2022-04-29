@@ -1,0 +1,15 @@
+.explorelist__component {
+  background-color: #8b4f0e;
+  border: 2px solid white;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  color: white;
+  margin: 6px 0;
+  width: 80%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6px;
+  cursor: pointer;
+}

@@ -1,6 +1,5 @@
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
 
 import { useAppContext } from '../contexts/AppContext'
 import { auth } from '../firebase'
@@ -8,14 +7,8 @@ import styles from '../styles/Layout.module.css'
 
 import type { NextPage } from "next"
 const Login: NextPage = () => {
-  const appContext = useAppContext()
   const router = useRouter()
-
-  useEffect(() => {
-    if (appContext.auth) {
-      router.push("/auctionhouse")
-    }
-  }, [])
+  const appContext = useAppContext()
 
   const handleSignIn = () => {
     signInWithEmailAndPassword(auth, "zeinfarhat6@gmail.com", "abcd1234")
@@ -26,6 +19,8 @@ const Login: NextPage = () => {
         console.log(e)
       })
   }
+
+  if (appContext.auth) return null
 
   return (
     <div className={styles.container}>

@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { useRouter } from 'next/router'
 import * as React from 'react'
 import { useContext, useEffect, useState } from 'react'
 
@@ -13,6 +13,7 @@ export const AppContext = React.createContext<IAppContext>({} as IAppContext)
 
 export const AppContextProvider: React.FC<IAppContext> = (props) => {
   const { children } = props
+  const router = useRouter()
   const [authenticated, setAuthenticated] = useState<boolean>(false)
 
   useEffect(() => {
@@ -21,6 +22,7 @@ export const AppContextProvider: React.FC<IAppContext> = (props) => {
         setAuthenticated(true)
       } else {
         setAuthenticated(false)
+        router.push("/")
       }
     })
   }, [])

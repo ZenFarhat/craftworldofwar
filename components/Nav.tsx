@@ -1,21 +1,16 @@
-import { useRouter } from 'next/router'
-
+import { useAppContext } from '../contexts/AppContext'
 import { auth } from '../firebase'
 import navStyles from '../styles/Nav.module.css'
 import NavLinkComponent from './NavLinkComponent'
 
 const Nav = () => {
-  const router = useRouter()
+  const appContext = useAppContext()
+
   const handleSignOut = () => {
-    auth
-      .signOut()
-      .then(() => {
-        router.push("/")
-      })
-      .catch((e) => {
-        console.log(e)
-      })
+    auth.signOut()
   }
+
+  if (!appContext.auth) return null
 
   return (
     <nav className={navStyles.nav}>

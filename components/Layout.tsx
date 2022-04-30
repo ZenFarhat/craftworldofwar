@@ -4,6 +4,7 @@ import layoutStyles from '../styles/Layout.module.css'
 import BottomMenu from './BottomMenu'
 import Meta from './Meta'
 import Nav from './Nav'
+import { PlayerInventory } from './PlayerInventory'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -18,6 +19,7 @@ export const Layout = (props: LayoutProps) => {
       <Nav />
       {children}
       <BottomMenu />
+      <PlayerInventory />
     </div>
   )
 }

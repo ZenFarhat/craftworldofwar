@@ -1,9 +1,7 @@
-import styles from '../styles/Layout.module.css'
-
-import type { NextPage } from "next"
+import type { NextPage } from 'next'
 const AuctionHouse: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <h1>Auction House</h1>
     </div>
   )

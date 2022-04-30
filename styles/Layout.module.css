@@ -1,3 +1,6 @@
 .container {
   display: flex;
+  background: url('/assets/landing-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }

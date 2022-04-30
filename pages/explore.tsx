@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 
+import ExploreListComponent from '../components/ExploreListComponent'
 import { getZones } from '../firebase'
 import { DefaultListModel } from '../models/DefaultList.interface'
-import styles from '../styles/Layout.module.css'
+import exploreStyles from '../styles/Explore.module.css'
 
-import type { NextPage } from "next"
+import type { NextPage } from 'next'
 const Explore: NextPage = () => {
   const [zones, setZones] = useState<DefaultListModel | null>(null)
 
@@ -13,12 +14,14 @@ const Explore: NextPage = () => {
   }, [])
 
   return (
-    <div className={styles.container}>
-      <h1>Explore</h1>
-      {zones &&
-        zones.zones.map((zone, i) => {
-          return <div key={i}>{zone.name}</div>
-        })}
+    <div className={exploreStyles.explore__container}>
+      <div className={exploreStyles.explore__sidebar}>
+        {zones &&
+          zones.zones.map((zone, i) => {
+            return <ExploreListComponent zoneName={zone.name} key={i} />
+          })}
+      </div>
+      <div className={exploreStyles.explore__map}></div>
     </div>
   )
 }

@@ -1,0 +1,44 @@
+.mainlayout__container {
+  width: 1200px;
+  height: 830px;
+  background-color: #1a1b35;
+  display: flex;
+}
+
+.mainlayout__sidebar {
+  width: 280px;
+  height: 100%;
+  background-color: #00091f;
+  flex: 1;
+}
+
+.mainlayout__sidebartext {
+  color: white;
+  font-size: 32px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.mainlayout__sidebartext:hover {
+  background-color: #1a1b35;
+}
+
+.mainlayout__img {
+  width: 100%;
+  height: 280px;
+  background-color: white;
+  background-size: cover;
+}
+
+.mainlayout__contentcontainer {
+  height: 100%;
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainlayout__contentsubcontainer {
+  height: 95%;
+  width: 95%;
+}

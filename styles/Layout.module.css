@@ -1,6 +1,13 @@
-.container {
+.layout__maincontainer {
   display: flex;
   background: url('/assets/landing-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.layout__subcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }

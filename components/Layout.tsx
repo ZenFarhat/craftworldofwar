@@ -14,10 +14,10 @@ export const Layout = (props: LayoutProps) => {
   const { children } = props
 
   return (
-    <div className={layoutStyles.container}>
+    <div className={layoutStyles.layout__maincontainer}>
       <Meta />
       <Nav />
-      {children}
+      <div className={layoutStyles.layout__subcontainer}>{children}</div>
       <BottomMenu />
       <PlayerInventory />
     </div>

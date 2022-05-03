@@ -1,0 +1,55 @@
+.dailyrotation__icons {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.dailyrotation__iconsub {
+  background: url('/assets/sword-placeholder.png');
+  width: 30%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dailyrotation__iconmain {
+  background: url('/assets/sword-placeholder.png');
+  width: 30%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.dailyrotation__iteminfoheader {
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #0d0d0d;
+}
+
+.dailyrotation__iteminfoheadertext {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.dailyrotation__iteminfo {
+  width: 100%;
+  height: 400px;
+  background-color: #1a1a1a;
+}
+
+.dailyrotation__buybtn {
+  padding: 16px 64px;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: none;
+  font-size: 24px;
+  background-color: #ef2e2e;
+  color: white;
+}

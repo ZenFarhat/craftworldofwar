@@ -6,11 +6,18 @@ interface InventorySlotProps {
   icon: string
   itemQuality: 'junk' | 'common' | 'uncommon' | 'rare' | 'epic' | 'legendary'
   itemLevelRequirement: number
+  itemType: string
 }
 
 const InventorySlot = (props: InventorySlotProps) => {
-  const { itemName, itemDescription, icon, itemQuality, itemLevelRequirement } =
-    props
+  const {
+    itemName,
+    itemDescription,
+    icon,
+    itemQuality,
+    itemLevelRequirement,
+    itemType
+  } = props
 
   const generateTextStyle = () => {
     switch (itemQuality) {
@@ -39,6 +46,7 @@ const InventorySlot = (props: InventorySlotProps) => {
       ></div>
       <div className={inventorySlotStyles.inventoryslot__hover}>
         <p style={{ color: generateTextStyle() }}>{itemName}</p>
+        <p>{itemType}</p>
         <p>Level Required: {itemLevelRequirement}</p>
         <p>{itemDescription}</p>
       </div>

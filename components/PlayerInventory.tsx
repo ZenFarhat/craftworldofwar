@@ -30,41 +30,7 @@ export const PlayerInventory = () => {
               itemQuality="legendary"
               itemLevelRequirement={30}
               itemDescription="Abdallah love this sword man bro man"
-            />
-            <InventorySlot
-              icon="/assets/sword-placeholder.png"
-              itemName="Legendary Sword Of Epic"
-              itemQuality="legendary"
-              itemLevelRequirement={30}
-              itemDescription="Abdallah love this sword man bro man"
-            />
-            <InventorySlot
-              icon="/assets/sword-placeholder.png"
-              itemName="Legendary Sword Of Epic"
-              itemQuality="legendary"
-              itemLevelRequirement={30}
-              itemDescription="Abdallah love this sword man bro man"
-            />
-            <InventorySlot
-              icon="/assets/sword-placeholder.png"
-              itemName="Legendary Sword Of Epic"
-              itemQuality="legendary"
-              itemLevelRequirement={30}
-              itemDescription="Abdallah love this sword man bro man"
-            />
-            <InventorySlot
-              icon="/assets/sword-placeholder.png"
-              itemName="Legendary Sword Of Epic"
-              itemQuality="legendary"
-              itemLevelRequirement={30}
-              itemDescription="Abdallah love this sword man bro man"
-            />
-            <InventorySlot
-              icon="/assets/sword-placeholder.png"
-              itemName="Legendary Sword Of Epic"
-              itemQuality="legendary"
-              itemLevelRequirement={30}
-              itemDescription="Abdallah love this sword man bro man"
+              itemType="Weapon"
             />
           </div>
           <button

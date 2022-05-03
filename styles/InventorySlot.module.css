@@ -1,0 +1,52 @@
+.inventoryslot__container {
+  position: relative;
+}
+
+.inventoryslot__slot {
+  width: 64px;
+  height: 64px;
+  border: 2px solid gold;
+  margin: 16px;
+  border-radius: 8px;
+  background-color: #8b4f0e;
+  box-shadow: 0 0 10px black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.inventoryslot__hover {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 256px;
+  padding: 8px;
+  top: 10%;
+  right: -195%;
+  border-radius: 16px;
+  z-index: 1000;
+  background-color: #080d21;
+  border: 2px solid #939394;
+  color: white;
+}
+
+.inventoryslot__hover > p {
+  margin-bottom: 8px;
+}
+
+/* hover over inventory slot */
+.inventoryslot__container:hover .inventoryslot__hover {
+  display: block;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+/* animate fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

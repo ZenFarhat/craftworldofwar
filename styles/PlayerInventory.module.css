@@ -5,7 +5,15 @@
   transform: translate(-50%, -50%);
   width: 500px;
   height: 500px;
-  background-color: #2a241f;
+  background-color: #ab7336;
   border-radius: 14px;
   box-shadow: 0 0 20px black;
+}
+
+.playerinventory__slots {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }

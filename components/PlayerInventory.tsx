@@ -25,42 +25,42 @@ export const PlayerInventory = () => {
         <div className={playerInventoryStyles.playerinventory}>
           <div className={playerInventoryStyles.playerinventory__slots}>
             <InventorySlot
-              icon="/assets/sword-placeholder.svg"
+              icon="/assets/sword-placeholder.png"
               itemName="Legendary Sword Of Epic"
               itemQuality="legendary"
               itemLevelRequirement={30}
               itemDescription="Abdallah love this sword man bro man"
             />
             <InventorySlot
-              icon="/assets/sword-placeholder.svg"
+              icon="/assets/sword-placeholder.png"
               itemName="Legendary Sword Of Epic"
               itemQuality="legendary"
               itemLevelRequirement={30}
               itemDescription="Abdallah love this sword man bro man"
             />
             <InventorySlot
-              icon="/assets/sword-placeholder.svg"
+              icon="/assets/sword-placeholder.png"
               itemName="Legendary Sword Of Epic"
               itemQuality="legendary"
               itemLevelRequirement={30}
               itemDescription="Abdallah love this sword man bro man"
             />
             <InventorySlot
-              icon="/assets/sword-placeholder.svg"
+              icon="/assets/sword-placeholder.png"
               itemName="Legendary Sword Of Epic"
               itemQuality="legendary"
               itemLevelRequirement={30}
               itemDescription="Abdallah love this sword man bro man"
             />
             <InventorySlot
-              icon="/assets/sword-placeholder.svg"
+              icon="/assets/sword-placeholder.png"
               itemName="Legendary Sword Of Epic"
               itemQuality="legendary"
               itemLevelRequirement={30}
               itemDescription="Abdallah love this sword man bro man"
             />
             <InventorySlot
-              icon="/assets/sword-placeholder.svg"
+              icon="/assets/sword-placeholder.png"
               itemName="Legendary Sword Of Epic"
               itemQuality="legendary"
               itemLevelRequirement={30}

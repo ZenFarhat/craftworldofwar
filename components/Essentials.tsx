@@ -6,7 +6,7 @@ interface ShopGridItems {
   item?: InventorySlot
 }
 
-const Essentials = (props: ShopGridItems[]) => {
+const Essentials = () => {
   const items: ShopGridItems[] = [
     { filled: false },
     { filled: false },

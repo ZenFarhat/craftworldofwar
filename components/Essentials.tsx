@@ -37,10 +37,16 @@ const Essentials = () => {
         </div>
         <div className={essentialsStyles.essentials__showcase}>
           <div className={essentialsStyles.essentials__showcaseimg}></div>
-          <div className={essentialsStyles.essentials__showcasetext}></div>
+          <div className={essentialsStyles.essentials__showcasetext}>
+            <h3 className={essentialsStyles.essentials__showcasetextheader}>
+              Legendary Sword Of Legend
+            </h3>
+          </div>
         </div>
       </div>
-      <button>Buy</button>
+      <div className={essentialsStyles.essentials__buttoncontainer}>
+        <button className={essentialsStyles.essentials__buybtn}>Buy</button>
+      </div>
     </div>
   )
 }

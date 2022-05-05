@@ -1,15 +1,15 @@
-.essentials__container {
+.sell__container {
   width: 100%;
   height: 100%;
   border-radius: 14px;
 }
 
-.essentials__subcontainer {
+.sell__subcontainer {
   display: flex;
   height: 700px;
 }
 
-.essentials__inventory {
+.sell__inventory {
   flex: 2;
   background-color: #0d0d0d;
   height: 700px;
@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.essentials__showcase {
+.sell__showcase {
   flex: 1.5;
   height: 100%;
   display: flex;
@@ -28,7 +28,7 @@
   justify-content: space-between;
 }
 
-.essentials__showcaseimg {
+.sell__showcaseimg {
   width: 90%;
   height: 200px;
   background: url('/assets/sword-placeholder.png');
@@ -38,36 +38,36 @@
   background-position: center;
 }
 
-.essentials__showcasetext {
+.sell__showcasetext {
   height: 450px;
   width: 90%;
   margin: 0 auto;
   background-color: #191919;
 }
 
-.essentials__showcasetextheader {
+.sell__showcasetextheader {
   padding: 8px;
   background-color: #0d0d0d;
   color: orange;
 }
 
-.essentials__inventoryslot {
+.sell__inventoryslot {
   width: 132px;
   height: 140px;
   background-color: #1a1a1a;
   margin: 0 10px;
 }
 
-.essentials__buybtn {
+.sell__sellbtn {
   padding: 16px 64px;
   margin: 20px auto;
   border-radius: 20px;
   border: none;
   font-size: 24px;
-  background-color: #ef2e2e;
+  background-color: #efad2e;
   color: white;
 }
-.essentials__buttoncontainer {
+.sell__buttoncontainer {
   display: flex;
   justify-content: center;
   align-items: center;

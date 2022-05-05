@@ -1,16 +1,35 @@
+import React, { useEffect, useState } from 'react'
+
+import { mainLayoutSubject$ } from '../rxjs'
 import mainLayoutComponentStyles from '../styles/MainLayoutComponent.module.css'
 
-interface MainLayoutComponentProps {
-  children: React.ReactNode
-  navigationLinks?: string[]
-  img?: string
+interface navigationLink {
+  text: string
+  onClick: () => void
 }
 
-const MainLayoutComponent = ({
-  children,
-  navigationLinks,
-  img
-}: MainLayoutComponentProps) => {
+interface MainLayoutComponentProps {
+  navigationLinks: navigationLink[]
+  img?: string
+  defaultTab: React.ReactNode
+}
+
+const MainLayoutComponent = (props: MainLayoutComponentProps) => {
+  const { navigationLinks, img, defaultTab } = props
+
+  const [layout, setLayout] = useState<React.ReactNode>()
+  const [tab, setTab] = useState<string>(navigationLinks[0].text)
+
+  useEffect(() => {
+    const mainLayoutSub = mainLayoutSubject$.subscribe({
+      next: (value) => {
+        setLayout(value)
+      }
+    })
+
+    return () => mainLayoutSub.unsubscribe()
+  }, [])
+
   return (
     <div className={mainLayoutComponentStyles.mainlayout__container}>
       <div className={mainLayoutComponentStyles.mainlayout__sidebar}>
@@ -21,10 +40,19 @@ const MainLayoutComponent = ({
         {navigationLinks?.map((item, i) => {
           return (
             <p
-              className={mainLayoutComponentStyles.mainlayout__sidebartext}
               key={i}
+              className={
+                mainLayoutComponentStyles.mainlayout__sidebartext +
+                (tab === item.text
+                  ? ` ${mainLayoutComponentStyles.mainlayout__sidebartextactive}`
+                  : '')
+              }
+              onClick={() => {
+                setTab(item.text)
+                item.onClick
+              }}
             >
-              {item}
+              {item.text}
             </p>
           )
         })}
@@ -33,7 +61,7 @@ const MainLayoutComponent = ({
         <div
           className={mainLayoutComponentStyles.mainlayout__contentsubcontainer}
         >
-          {children}
+          {layout || defaultTab}
         </div>
       </div>
     </div>

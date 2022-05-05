@@ -5,15 +5,7 @@ import type { NextPage } from 'next'
 const Character: NextPage = () => {
   const { player } = useAppContext()
 
-  return (
-    <div>
-      <MainLayoutComponent>
-        <h1>Name: Zen</h1>
-        <h1>Gold: {player?.gold}</h1>
-        <h1>Level: {player?.level}</h1>
-      </MainLayoutComponent>
-    </div>
-  )
+  return <div></div>
 }
 
 export default Character

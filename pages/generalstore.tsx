@@ -1,4 +1,5 @@
 import DailyRotations from '../components/DailyRotations'
+import Essentials from '../components/Essentials'
 import MainLayoutComponent from '../components/MainLayoutComponent'
 import { mainLayoutSubject$ } from '../rxjs'
 
@@ -13,10 +14,16 @@ const GeneralStore: NextPage = () => {
             onClick: () => {
               mainLayoutSubject$.next(<DailyRotations />)
             }
+          },
+          {
+            text: 'Essentials',
+            onClick: () => {
+              mainLayoutSubject$.next(<Essentials />)
+            }
           }
         ]}
-        img="/assets/goblin-placeholder.png"
         defaultTab={<DailyRotations />}
+        img="/assets/goblin-placeholder.png"
       />
     </div>
   )

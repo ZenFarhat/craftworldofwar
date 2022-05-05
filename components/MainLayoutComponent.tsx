@@ -19,11 +19,13 @@ const MainLayoutComponent = (props: MainLayoutComponentProps) => {
 
   const [layout, setLayout] = useState<React.ReactNode>()
   const [tab, setTab] = useState<string>(navigationLinks[0].text)
+  const [tabOverride, setTabOverride] = useState<boolean>(false)
 
   useEffect(() => {
     const mainLayoutSub = mainLayoutSubject$.subscribe({
       next: (value) => {
         setLayout(value)
+        setTabOverride(true)
       }
     })
 
@@ -49,7 +51,7 @@ const MainLayoutComponent = (props: MainLayoutComponentProps) => {
               }
               onClick={() => {
                 setTab(item.text)
-                item.onClick
+                item.onClick()
               }}
             >
               {item.text}
@@ -61,7 +63,7 @@ const MainLayoutComponent = (props: MainLayoutComponentProps) => {
         <div
           className={mainLayoutComponentStyles.mainlayout__contentsubcontainer}
         >
-          {layout || defaultTab}
+          {tabOverride ? layout : defaultTab}
         </div>
       </div>
     </div>

@@ -58,15 +58,6 @@
   margin: 0 10px;
 }
 
-.sell__sellbtn {
-  padding: 16px 64px;
-  margin: 20px auto;
-  border-radius: 20px;
-  border: none;
-  font-size: 24px;
-  background-color: #efad2e;
-  color: white;
-}
 .sell__buttoncontainer {
   display: flex;
   justify-content: center;

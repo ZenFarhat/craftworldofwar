@@ -58,15 +58,6 @@
   margin: 0 10px;
 }
 
-.essentials__buybtn {
-  padding: 16px 64px;
-  margin: 20px auto;
-  border-radius: 20px;
-  border: none;
-  font-size: 24px;
-  background-color: #ef2e2e;
-  color: white;
-}
 .essentials__buttoncontainer {
   display: flex;
   justify-content: center;

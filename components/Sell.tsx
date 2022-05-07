@@ -1,5 +1,6 @@
 import { InventorySlot } from '../models/Inventory.interface'
 import sellStyles from '../styles/Sell.module.css'
+import BasicButton from './BasicButton'
 
 interface SellGridItems {
   filled?: boolean
@@ -42,7 +43,7 @@ const Sell = () => {
         </div>
       </div>
       <div className={sellStyles.sell__buttoncontainer}>
-        <button className={sellStyles.sell__sellbtn}>Sell</button>
+        <BasicButton label="Sell" onClick={() => {}} />
       </div>
     </div>
   )

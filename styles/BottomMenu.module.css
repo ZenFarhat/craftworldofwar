@@ -4,16 +4,19 @@
   right: 20px;
   width: 150px;
   background-color: gray;
+  border-radius: 20px;
   color: white;
   padding: 8px 16px;
 }
 
 .bottom__menuicon {
-  border: 1px solid white;
   width: 24px;
   height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background: url('https://firebasestorage.googleapis.com/v0/b/craftworldofwar.appspot.com/o/menu-icons%2Finventory-icon.png?alt=media&token=58754d7c-c8d7-4c5a-8184-32452e01e25e');
+  background-size: contain;
+  background-position: center;
 }

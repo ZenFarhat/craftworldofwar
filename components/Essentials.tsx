@@ -1,5 +1,6 @@
 import { InventorySlot } from '../models/Inventory.interface'
 import essentialsStyles from '../styles/Essentials.module.css'
+import BasicButton from './BasicButton'
 
 interface ShopGridItems {
   filled?: boolean
@@ -45,7 +46,7 @@ const Essentials = () => {
         </div>
       </div>
       <div className={essentialsStyles.essentials__buttoncontainer}>
-        <button className={essentialsStyles.essentials__buybtn}>Buy</button>
+        <BasicButton label="Buy" onClick={() => {}} variant="red" />
       </div>
     </div>
   )

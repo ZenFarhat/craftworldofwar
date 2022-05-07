@@ -12,21 +12,15 @@ const GeneralStore: NextPage = () => {
         navigationLinks={[
           {
             text: 'Daily Rotation',
-            onClick: () => {
-              mainLayoutSubject$.next(<DailyRotations />)
-            }
+            tab: <DailyRotations />
           },
           {
             text: 'Essentials',
-            onClick: () => {
-              mainLayoutSubject$.next(<Essentials />)
-            }
+            tab: <Essentials />
           },
           {
             text: 'Sell',
-            onClick: () => {
-              mainLayoutSubject$.next(<Sell />)
-            }
+            tab: <Sell />
           }
         ]}
         defaultTab={<DailyRotations />}

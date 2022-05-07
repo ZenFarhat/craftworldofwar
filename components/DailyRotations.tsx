@@ -1,4 +1,5 @@
 import dailyRotationStyles from '../styles/DailyRotations.module.css'
+import BasicButton from './BasicButton'
 
 const DailyRotations = () => {
   return (
@@ -25,9 +26,7 @@ const DailyRotations = () => {
         </div>
       </div>
       <div style={{ width: '100%', display: 'flex' }}>
-        <button className={dailyRotationStyles.dailyrotation__buybtn}>
-          Buy
-        </button>
+        <BasicButton label="Buy" variant="red" onClick={() => {}} />
       </div>
     </div>
   )

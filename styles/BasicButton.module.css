@@ -1,0 +1,9 @@
+.basic__btn {
+  padding: 16px 64px;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}

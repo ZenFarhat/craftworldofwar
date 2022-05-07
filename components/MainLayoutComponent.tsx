@@ -5,7 +5,7 @@ import mainLayoutComponentStyles from '../styles/MainLayoutComponent.module.css'
 
 interface navigationLink {
   text: string
-  onClick: () => void
+  tab: React.ReactNode
 }
 
 interface MainLayoutComponentProps {
@@ -51,7 +51,7 @@ const MainLayoutComponent = (props: MainLayoutComponentProps) => {
               }
               onClick={() => {
                 setTab(item.text)
-                item.onClick()
+                mainLayoutSubject$.next(item.tab)
               }}
             >
               {item.text}

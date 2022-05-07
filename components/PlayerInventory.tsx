@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 
+import { useAppContext } from '../contexts/AppContext'
 import { openInventorySubject$ } from '../rxjs'
 import playerInventoryStyles from '../styles/PlayerInventory.module.css'
 import InventorySlot from './InventorySlot'

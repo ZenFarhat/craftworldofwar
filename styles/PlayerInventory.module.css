@@ -5,15 +5,19 @@
   transform: translate(-50%, -50%);
   width: 500px;
   height: 500px;
-  background-color: #ab7336;
+  border: 4px solid #ab7336;
   border-radius: 14px;
   box-shadow: 0 0 20px black;
+  background-color: #1a1b35;
 }
 
 .playerinventory__slots {
   padding: 16px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  border-radius: 14px 14px 0 0;
   flex-wrap: wrap;
   justify-content: flex-start;
+  background-color: #0d0d0d;
+  height: 80%;
 }

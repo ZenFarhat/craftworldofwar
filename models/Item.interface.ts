@@ -17,10 +17,11 @@ export interface ItemModel {
     | 'shoulder'
     | 'chest'
     | 'pants'
-    | 'glove'
-    | 'cloak'
+    | 'gloves'
+    | 'back'
     | 'bracer'
     | 'boot'
     | 'belt'
     | 'trinket'
+  soulBound: boolean
 }

@@ -3,6 +3,8 @@
   height: 830px;
   background-color: #1a1b35;
   display: flex;
+  border: 8px solid #1d1204;
+  box-shadow: 0 0 50px black;
 }
 
 .mainlayout__sidebar {

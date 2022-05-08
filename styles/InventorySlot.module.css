@@ -12,6 +12,7 @@
   background-size: contain;
   cursor: pointer;
   background-color: #191919;
+  z-index: 2000;
 }
 
 .inventoryslot__hover {
@@ -23,10 +24,10 @@
   top: 10%;
   right: -195%;
   border-radius: 16px;
-  z-index: 1000;
   background-color: #080d21;
   border: 2px solid #939394;
   color: white;
+  z-index: 2000;
 }
 
 .inventoryslot__hover > p {

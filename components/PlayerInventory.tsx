@@ -29,8 +29,17 @@ export const PlayerInventory = () => {
         <div className={playerInventoryStyles.playerinventory}>
           <div className={playerInventoryStyles.playerinventory__slots}>
             {armorItems
-              .filter((item) =>
-                item.itemName.toLowerCase().includes(searchQuery.toLowerCase())
+              .filter(
+                (item) =>
+                  item.itemName
+                    .toLowerCase()
+                    .includes(searchQuery.toLowerCase()) ||
+                  item.itemType
+                    .toLowerCase()
+                    .includes(searchQuery.toLowerCase()) ||
+                  item.itemQuality
+                    .toLowerCase()
+                    .includes(searchQuery.toLowerCase())
               )
               .map((item, i) => (
                 <InventorySlot
@@ -53,24 +62,6 @@ export const PlayerInventory = () => {
                 setSearchQuery(e.target.value)
               }}
             />
-            <div className={playerInventoryStyles.playerinventory__filters}>
-              <div className={playerInventoryStyles.playerinventory__filter}>
-                <input type="radio" value="weapon" name="filter" />{' '}
-                <span>Weapon</span>
-              </div>
-              <div className={playerInventoryStyles.playerinventory__filter}>
-                <input type="radio" value="armor" name="filter" />{' '}
-                <span>Armor</span>
-              </div>
-              <div className={playerInventoryStyles.playerinventory__filter}>
-                <input type="radio" value="trinkets" name="filter" />{' '}
-                <span>Trinkets</span>
-              </div>
-              <div className={playerInventoryStyles.playerinventory__filter}>
-                <input type="radio" value="reagents" name="filter" />{' '}
-                <span>Reagents</span>
-              </div>
-            </div>
           </div>
           <div>
             <BasicButton

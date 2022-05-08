@@ -8,7 +8,7 @@ export interface StatsModel {
 export interface ItemModel {
   itemName: string
   itemType: string
-  itemStats: StatsModel
+  itemStats?: StatsModel
   itemUrl: string
   itemDescrioption: string
   itemQuality: 'junk' | 'common' | 'uncommon' | 'rare' | 'epic' | 'legendary'

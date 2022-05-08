@@ -176,5 +176,28 @@ export const armorItems: ItemModel[] = [
       'https://firebasestorage.googleapis.com/v0/b/craftworldofwar.appspot.com/o/armour-icons%2Ftrinket2.png?alt=media&token=5eb66036-26e1-4a45-9640-2d7ae450b76e',
     armorType: 'trinket',
     soulBound: false
+  },
+  {
+    itemName: 'The Assbringer',
+    itemQuality: 'legendary',
+    itemType: 'Weapon',
+    itemDescrioption: 'You can feel very power bumhole',
+    itemStats: {
+      power: 20,
+      healthRegen: 20,
+      exploreSpeed: 5
+    },
+    itemUrl:
+      'https://firebasestorage.googleapis.com/v0/b/craftworldofwar.appspot.com/o/weapon-icons%2Fsword1.png?alt=media&token=96eaefa9-a95d-48a8-a858-c0754ccd91b9',
+    soulBound: true
+  },
+  {
+    itemName: 'Minor Health Potion',
+    itemQuality: 'uncommon',
+    itemType: 'Consumable',
+    itemDescrioption: 'Restore 40hp',
+    itemUrl:
+      'https://firebasestorage.googleapis.com/v0/b/craftworldofwar.appspot.com/o/potion-icons%2Fminorpotion1.png?alt=media&token=59d03e22-69c9-4776-8601-2f259df8774a',
+    soulBound: false
   }
 ]

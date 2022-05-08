@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import { useAppContext } from '../contexts/AppContext'
 import { openInventorySubject$ } from '../rxjs'
 import playerInventoryStyles from '../styles/PlayerInventory.module.css'
+import BasicButton from './BasicButton'
 import InventorySlot from './InventorySlot'
 
 export const PlayerInventory = () => {
@@ -34,13 +35,39 @@ export const PlayerInventory = () => {
               itemType="Weapon"
             />
           </div>
-          <button
-            onClick={() => {
-              setOpen(false)
-            }}
-          >
-            Close Me
-          </button>
+          <div>
+            <input
+              type="text"
+              placeholder="Search"
+              className={playerInventoryStyles.playerinventory__searchbar}
+            />
+            <div className={playerInventoryStyles.playerinventory__filters}>
+              <div className={playerInventoryStyles.playerinventory__filter}>
+                <input type="radio" value="weapon" name="filter" />{' '}
+                <span>Weapon</span>
+              </div>
+              <div className={playerInventoryStyles.playerinventory__filter}>
+                <input type="radio" value="armor" name="filter" />{' '}
+                <span>Armor</span>
+              </div>
+              <div className={playerInventoryStyles.playerinventory__filter}>
+                <input type="radio" value="trinkets" name="filter" />{' '}
+                <span>Trinkets</span>
+              </div>
+              <div className={playerInventoryStyles.playerinventory__filter}>
+                <input type="radio" value="reagents" name="filter" />{' '}
+                <span>Reagents</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <BasicButton
+              label="close"
+              onClick={() => {
+                setOpen(false)
+              }}
+            />
+          </div>
         </div>
       )}
     </>

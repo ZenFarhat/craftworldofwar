@@ -3,17 +3,15 @@
 }
 
 .inventoryslot__slot {
-  width: 64px;
-  height: 64px;
-  border: 2px solid gold;
+  width: 80px;
+  height: 80px;
   margin: 16px;
-  border-radius: 8px;
-  background-color: #8b4f0e;
-  box-shadow: 0 0 10px black;
+  padding: 8px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   cursor: pointer;
+  background-color: #191919;
 }
 
 .inventoryslot__hover {

@@ -10,7 +10,7 @@ export interface ItemModel {
   itemType: string
   itemStats: StatsModel
   itemUrl: string
-  itemDescrioption?: string
+  itemDescrioption: string
   itemQuality: 'junk' | 'common' | 'uncommon' | 'rare' | 'epic' | 'legendary'
   armorType?:
     | 'head'

@@ -45,7 +45,7 @@ export const armorItems: ItemModel[] = [
       exploreSpeed: 0
     },
     itemUrl:
-      'https://firebasestorage.googleapis.com/v0/b/craftworldofwar.appspot.com/o/armour-icons%2Fboot1.png?alt=media&token=08d451b3-61d7-4f3c-96bd-3cc72e33bdee',
+      'https://firebasestorage.googleapis.com/v0/b/craftworldofwar.appspot.com/o/armour-icons%2Fbracer1.png?alt=media&token=a9fe4033-8dcf-4d36-9671-36ae06236c39',
     armorType: 'bracer',
     soulBound: false
   },
@@ -114,22 +114,6 @@ export const armorItems: ItemModel[] = [
     soulBound: false
   },
   {
-    itemName: "Traveler's Hood",
-    itemQuality: 'common',
-    itemType: 'Armor',
-    itemDescrioption: 'Smells like someone else has worn this',
-    itemStats: {
-      armor: 5,
-      power: 0,
-      healthRegen: 0,
-      exploreSpeed: 0
-    },
-    itemUrl:
-      'https://firebasestorage.googleapis.com/v0/b/craftworldofwar.appspot.com/o/armour-icons%2Fhelmet1.png?alt=media&token=ee03bbfc-665c-44a3-ae66-bb3b886b4492',
-    armorType: 'head',
-    soulBound: false
-  },
-  {
     itemName: "Traveler's Pants",
     itemQuality: 'common',
     itemType: 'Armor',
@@ -163,7 +147,7 @@ export const armorItems: ItemModel[] = [
   },
   {
     itemName: "Traveler's Necklace",
-    itemQuality: 'common',
+    itemQuality: 'uncommon',
     itemType: 'Armor',
     itemDescrioption: 'Smells like someone else has worn this',
     itemStats: {
@@ -179,7 +163,7 @@ export const armorItems: ItemModel[] = [
   },
   {
     itemName: "Traveler's Ring",
-    itemQuality: 'common',
+    itemQuality: 'rare',
     itemType: 'Armor',
     itemDescrioption: 'Smells like someone else has worn this',
     itemStats: {

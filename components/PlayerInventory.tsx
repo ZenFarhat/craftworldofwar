@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 
-import { useAppContext } from '../contexts/AppContext'
 import { armorItems } from '../data'
 import { openInventorySubject$ } from '../rxjs'
 import playerInventoryStyles from '../styles/PlayerInventory.module.css'

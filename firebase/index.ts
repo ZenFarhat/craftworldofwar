@@ -44,17 +44,6 @@ export const addZones = async () => {
   })
 }
 
-// get zones
-export const getZones = async () => {
-  const docRef = doc(db, 'defaultList', 'zones')
-  const docSnap = await getDoc(docRef)
-  if (docSnap.exists()) {
-    return docSnap.data() as DefaultListModel
-  } else {
-    return null
-  }
-}
-
 const defaultPlayer: PlayerModel = {
   gold: 3,
   level: 1,

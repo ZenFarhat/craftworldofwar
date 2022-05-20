@@ -38,6 +38,9 @@ export const PlayerInventory = () => {
                     .includes(searchQuery.toLowerCase()) ||
                   item.itemQuality
                     .toLowerCase()
+                    .includes(searchQuery.toLowerCase()) ||
+                  item.armorType
+                    ?.toLowerCase()
                     .includes(searchQuery.toLowerCase())
               )
               .map((item, i) => (
